@@ -15,7 +15,6 @@
 <meta property="og:title" content="Flor de Joia — Semijoias delicadas · Prata 925">
 <meta property="og:description" content="Elegância e charme em cada detalhe. Prata 925 legítima, embalagem especial e envio para todo o Brasil.">
 <meta property="og:url" content="https://flor-de-joia.vercel.app/">
-<!-- SUBSTITUIR: og.jpg — 1200x630, foto real da peça mais bonita sobre pedra clara -->
 <meta property="og:image" content="https://flor-de-joia.vercel.app/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -54,6 +53,9 @@
   --marinho:#1F2A44;
   --dourado:#B99356;
   --branco:#FFFFFF;
+  /* medidos do grid real do @_flordejoia_ */
+  --creme:#F6EFE4;      /* familia creme/champanhe: 83% da massa cromatica dos posts */
+  --rosa:#BD7C76;       /* rosa do logotipo — decorativo, 2.8:1 sobre blush */
 
   --marinho-70:rgba(31,42,68,.70);
   --marinho-55:rgba(31,42,68,.55);
@@ -241,7 +243,6 @@ p{margin:0;}
   aspect-ratio:4/5;
   border-radius:12px;
   overflow:hidden;
-  /* SUBSTITUIR: foto real da peça mais bonita (pulseira olho grego sobre pedra) — mín 1400px */
   background:linear-gradient(150deg,#F7E8E4,#EDD5CE);
   box-shadow:var(--sombra-rosa);
 }
@@ -253,7 +254,7 @@ p{margin:0;}
 /* ============================================================
    BARRA DE CONFIANÇA
    ============================================================ */
-.trust{background:var(--branco);border-top:1px solid rgba(31,42,68,.06);border-bottom:1px solid rgba(31,42,68,.06);}
+.trust{background:var(--creme);border-top:1px solid rgba(31,42,68,.06);border-bottom:1px solid rgba(31,42,68,.06);}
 .trust__grid{
   display:grid;
   grid-template-columns:repeat(2,1fr);
@@ -278,7 +279,7 @@ p{margin:0;}
    ============================================================ */
 .sec{padding:88px 0;}
 .sec--blush{background:var(--blush);}
-.sec--branco{background:var(--branco);}
+.sec--branco{background:var(--creme);}
 .sec--rosa{background:var(--rosa-po);}
 .sec__head{max-width:620px;}
 .sec__head--center{margin:0 auto;text-align:center;}
@@ -307,7 +308,7 @@ p{margin:0;}
 }
 .card:hover{transform:translateY(-4px);box-shadow:var(--sombra-rosa-hover);}
 .card__media{
-  aspect-ratio:4/5;
+  aspect-ratio:1/1;
   background:linear-gradient(150deg,#F7E8E4,#EDD5CE);
   position:relative;
 }
@@ -522,8 +523,8 @@ p{margin:0;}
       </div>
     </div>
     <div class="hero__media rv">
-      <!-- SUBSTITUIR: foto real da peça mais bonita (pulseira olho grego sobre pedra clara) — mín 1400px de largura
-      <img src="img/hero-olho-grego.jpg" alt="Pulseira de prata 925 com pingente de olho grego apoiada sobre pedra clara" width="1400" height="1750"> -->
+      <img src="img/hero.jpg" width="451" height="602" fetchpriority="high" decoding="async"
+           alt="Modelo usando colar e anéis Flor de Joia com pedras azuis e zircônias">
     </div>
   </div>
 </section>
@@ -564,8 +565,8 @@ p{margin:0;}
     <div class="cols">
       <article class="card rv">
         <div class="card__media">
-          <!-- SUBSTITUIR: foto real de peça da linha Olho Grego (prata 925)
-          <img src="img/olho-grego.jpg" alt="Pulseira de prata 925 com pingente de olho grego azul" width="900" height="1125" loading="lazy"> -->
+          <img src="img/olho-grego.jpg" width="319" height="320" loading="lazy" decoding="async"
+               alt="Pulseira de prata 925 com olho grego e duas pedras azuis, sobre pedra clara">
         </div>
         <div class="card__body">
           <h3 class="card__name">Olho Grego</h3>
@@ -577,8 +578,8 @@ p{margin:0;}
 
       <article class="card rv">
         <div class="card__media">
-          <!-- SUBSTITUIR: foto real de peça da Linha Fé
-          <img src="img/linha-fe.jpg" alt="Colar de prata 925 com pingente da Linha Fé" width="900" height="1125" loading="lazy"> -->
+          <img src="img/linha-fe.jpg" width="294" height="295" loading="lazy" decoding="async"
+               alt="Colar de prata 925 com pingente de Nossa Senhora Aparecida em zircônias azuis">
         </div>
         <div class="card__body">
           <h3 class="card__name">Linha Fé</h3>
@@ -590,8 +591,8 @@ p{margin:0;}
 
       <article class="card rv">
         <div class="card__media">
-          <!-- SUBSTITUIR: foto real de peça da Coleção Brasil (pedras verde-esmeralda)
-          <img src="img/colecao-brasil.jpg" alt="Anel com pedra verde-esmeralda da Coleção Brasil" width="900" height="1125" loading="lazy"> -->
+          <img src="img/colecao-brasil.jpg" width="375" height="374" loading="lazy" decoding="async"
+               alt="Dois colares choker com pedras verde-esmeralda da Coleção Brasil">
         </div>
         <div class="card__body">
           <h3 class="card__name">Coleção Brasil</h3>
